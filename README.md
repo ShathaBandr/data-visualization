@@ -26,34 +26,38 @@ pip install matplotlib seaborn pandas numpy
 ### أنواع الرسوم في المشروع
 
 1. **الرسم الخطي (Line Plot)**
+   
    تمثيل نمو المبيعات السنوي في السعودية.
 
    ```python
    plt.plot(years, sales)
    ```
 
-2. **الرسم العمودي (Bar Chart)**
+3. **الرسم العمودي (Bar Chart)**
+   
    مقارنة مبيعات الفئات المختلفة مثل الإلكترونيات والملابس وغيرها.
 
    ```python
    plt.bar(categories, sales)
    ```
 
-3. **الرسم العمودي باستخدام Seaborn**
+5. **الرسم العمودي باستخدام Seaborn**
+   
    توضيح نفس البيانات لكن بتصميم أكثر جمالًا.
 
    ```python
    sns.barplot(x='category', y='sales', data=df)
    ```
 
-4. **الرسم البياني التكراري (Histogram)**
+7. **الرسم البياني التكراري (Histogram)**
+   
    توزيع بيانات عشوائية على شكل Histogram.
 
    ```python
    plt.hist(data, bins=30)
    ```
 
-5. **الرسم التشتتي (Scatter Plot)**
+9. **الرسم التشتتي (Scatter Plot)**
    توزيع نقطي عشوائي يوضح العلاقة بين متغيرين.
 
    ```python
